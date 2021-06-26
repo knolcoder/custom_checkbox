@@ -1,0 +1,514 @@
+/*Deby - Custom Radio Buttons*/
+
+
+/*=====================
+01. Deby CUSTOM RADIO BUTTONS STYLE 1 CSS
+02. Deby CUSTOM RADIO BUTTONS STYLE 2 CSS
+03. Deby CUSTOM RADIO BUTTONS STYLE 3 CSS
+04. Deby CUSTOM RADIO BUTTONS STYLE 4 CSS
+05. Deby CUSTOM RADIO BUTTONS STYLE 5 CSS
+=======================*/
+
+
+/*=====================
+01. Deby CUSTOM RADIO BUTTONS STYLE 1 CSS
+=======================*/
+
+.card-style1 {
+    max-width: 400px;
+    width: 100%;
+    margin: 0px auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-style1 .title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.card-style1 label.box {
+    background: #ddd;
+    margin-top: 12px;
+    padding: 10px 12px;
+    display: flex;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.card-style1 #option1-1:checked~label.first,
+.card-style1 #option1-2:checked~label.second,
+.card-style1 #option1-3:checked~label.third {
+    border-color: #8373e6;
+    background: #c1bdda;
+}
+
+.card-style1 label.box:hover {
+    background: #c1bdda;
+}
+
+.card-style1 label.box .circle {
+    height: 22px;
+    width: 22px;
+    background: #ccc;
+    border: 5px solid transparent;
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 50%;
+    transition: all 0.25s ease;
+    box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-style1 #option1-1:checked~label.first .circle,
+.card-style1 #option1-2:checked~label.second .circle,
+.card-style1 #option1-3:checked~label.third .circle {
+    border-color: #8373e6;
+    background: #fff;
+}
+
+.card-style1 label.box .option {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.card-style1 input[type="radio"] {
+    display: none;
+}
+
+/*=====================
+02. Deby CUSTOM RADIO BUTTONS STYLE 2 CSS
+=======================*/
+
+.card-style2 {
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-style2 .title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.card-style2 .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-style2 .box {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+}
+
+.card-style2 .box .circle {
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+}
+
+.card-style2 .box .circle::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #8373e6;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+}
+
+.card-style2 input[type="radio"] {
+    display: none;
+}
+
+.card-style2 #option2-1:checked:checked~.first,
+.card-style2 #option2-2:checked:checked~.second {
+    border-color: #8373e6;
+    background: #8373e6;
+}
+
+.card-style2 #option2-1:checked:checked~.first .circle,
+.card-style2 #option2-2:checked:checked~.second .circle {
+    background: #fff;
+}
+
+.card-style2 #option2-1:checked:checked~.first .circle::before,
+.card-style2 #option2-2:checked:checked~.second .circle::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.card-style2 .box span {
+    font-size: 20px;
+    color: #808080;
+}
+
+.card-style2 #option2-1:checked:checked~.first span,
+.card-style2 #option2-2:checked:checked~.second span {
+    color: #fff;
+}
+
+/* Let's write a media query to make it responsive */
+
+@media (max-width: 500px) {
+    .card-style2 .content .title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .card-style2 .content {
+        flex-direction: column;
+    }
+    .card-style2 .box {
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .card-style2 .box .circle {
+        margin-right: 5px;
+    }
+}
+
+/*=====================
+03. Deby CUSTOM RADIO BUTTONS STYLE 3 CSS
+=======================*/
+.card-style3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-style3 .title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.card-style3 .content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-style3 .box input {
+    display: none;
+}
+
+.card-style3 .option {
+    margin: 10px;
+    width: 180px;
+    height: 200px;
+    border: 3px solid transparent;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #c3c3c367;
+    cursor: pointer;
+}
+
+.card-style3 .option>i {
+    color: #ffffff;
+    background-color: #8373e6;
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(4);
+    border-radius: 50px;
+    padding: 3px;
+    transition: 0.2s;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.card-style3 .option .icon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-style3 .option .icon i {
+    color: #8373e6;
+    line-height: 80px;
+    font-size: 60px;
+}
+
+.card-style3 .option .icon span {
+    color: #8373e6;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.card-style3 .box input:checked+.option {
+    border: 3px solid #8373e6;
+}
+
+.card-style3 .box input:checked+.option>i {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+/*=====================
+04. Deby CUSTOM RADIO BUTTONS STYLE 4 CSS
+=======================*/
+
+.card-style4 {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card-style4 .title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-style4 input[type="radio"] {
+    display: none;
+}
+
+.card-style4 .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-style4 .option {
+    width: 290px;
+    height: 76px;
+    margin: 14px;
+    padding: 8px 15px;
+    border: 2px solid #00000050;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card-style4 .option img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.card-style4 .radio-content .radio-title {
+    display: inline-block;
+    color: #212121;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.card-style4 .radio-content .radio-title span {
+    display: inline-block;
+    font-size: 24px;
+    text-transform: capitalize;
+    vertical-align: middle;
+}
+
+.card-style4 input:checked+.option {
+    border: 2px solid #8373e6;
+    animation: bounceIn 1s;
+}
+
+/* Let's write a media query to make it responsive */
+
+@media (max-width: 500px) {
+    .card-style4 .radio-content .radio-title {
+        font-size: 13px;
+    }
+    .card-style4 .radio-content .radio-title span {
+        font-size: 18px;
+    }
+    .card-style4 .option {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* Let's create an bounceIn animation */
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+
+/* Let's write a media query to make it responsive */
+
+@media (max-width: 500px) {
+    .card-style4 .content .title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .card-style4 .content .desc {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+/*=====================
+05. Deby CUSTOM RADIO BUTTONS STYLE 5 CSS
+=======================*/
+
+.card-style5 {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-style5 .title {
+    color: #fff;
+    line-height: 65px;
+    text-align: center;
+    background: #8373e6;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-style5 .content {
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.card-style5 .content .box {
+    display: flex;
+    height: 53px;
+    width: 100%;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 50px;
+    margin: 10px 0;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-style5 #option5-1:checked~.first,
+.card-style5 #option5-2:checked~.second,
+.card-style5 #option5-3:checked~.third,
+.card-style5 #option5-4:checked~.fourth {
+    background: #8373e6;
+    border-color: #8373e6;
+}
+
+.card-style5 .content .box .dot {
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.card-style5 #option5-1:checked~.first .dot,
+.card-style5 #option5-2:checked~.second .dot,
+.card-style5 #option5-3:checked~.third .dot,
+.card-style5 #option5-4:checked~.fourth .dot {
+    background: #fff;
+}
+
+.card-style5 .content .box .dot::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.card-style5 #option5-1:checked~.first .dot::before,
+.card-style5 #option5-2:checked~.second .dot::before,
+.card-style5 #option5-3:checked~.third .dot::before,
+.card-style5 #option5-4:checked~.fourth .dot::before {
+    background: #8373e6;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.card-style5 .content .box .text {
+    color: #333;
+    font-size: 18px;
+    padding-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.card-style5 #option5-1:checked~.first .text,
+.card-style5 #option5-2:checked~.second .text,
+.card-style5 #option5-3:checked~.third .text,
+.card-style5 #option5-4:checked~.fourth .text {
+    color: #fff;
+}
+
+.card-style5 .content input[type="radio"] {
+    display: none;
+}
+
+/* Let's write a media query to make it responsive */
+
+@media (max-width: 500px) {
+    .card-style5 .content {
+        padding: 15px;
+    }
+}
